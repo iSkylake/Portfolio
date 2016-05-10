@@ -11,6 +11,10 @@ app.get("/", function(req, res){
 	res.render("index");
 });
 
+app.get("/about", function(req, res){
+	res.render("about");
+});
+
 app.listen(3000, function(){
 	console.log("Server Started")
 });
