@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iSkylake/Portfolio.git"
+  },
+  "author": "Llorch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iSkylake/Portfolio/issues"
+  },
+  "homepage": "https://github.com/iSkylake/Portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.16"
+  }
+}
