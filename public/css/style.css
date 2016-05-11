@@ -117,3 +117,8 @@ hr.style-sm{
 .app-img{
 	border: solid #000 2px;
 }
+
+.inline-content{
+	display: flex;
+	flex-wrap: wrap;
+}
