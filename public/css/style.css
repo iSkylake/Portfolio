@@ -33,9 +33,17 @@
 	color: #fff;
 }
 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #000;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
 .jumbotron{
 	text-align: center;
-	margin: 10% 0px;
+	margin: 9% 0px;
 	background-color: #34B3A0;
 	color: #fff;
 }
@@ -43,6 +51,7 @@
 body{
 	background-color: #34B3A0;
 	font-family: Consolas;
+	color: white;
 }
 
 .photo{
@@ -66,76 +75,25 @@ hr.style-sm{
     width: 40%;
 }
 
-.about{
+.info{
 	margin-top: 30px;
-	border-radius: 10px;
+/*	border-radius: 10px;
 	border: 1px solid transparent;
 	background-color: #e9eaea;
-	margin-bottom: 30px;
-}
-
-.section{
-	margin: 0 auto;
-	border: transparent; solid 1px;
-	text-align: center;
-}
-
-.content{
-	max-width: 50%;
-	display: inline-block;
-	text-align: justify;
-	margin: 10px;
-	vertical-align: middle;
+	margin-bottom: 30px;*/
 }
 
 .divider{
-    background-color: #fff;
-    height: 5px;
-    width: 100%;
-    text-align: center;
+    background-color: #204056;
+    height: 3px;
+    border-top-color: #204056;
+    margin: 40px 0;	
 }
 
-#codepic{
-	width: 250px;
-	height: 250px;
-}
-
-#bridgepic{
-	width: 350px;
-	height: 200px;
-}
-
-.edu{
-	max-width: 22%;
-}
-
-div .caption h4{
-	text-align: center;
-}
-
-.edu_logo{
-	max-width: 150px;
-	max-height: 150px;
-}
-
-.simple_line{
-	height: 1px;
-	background-color: black;
-}
-
-span{
-	background-color: #5bc0de;
-	border-radius: 15px;
-	border: #337ab7 solid 2px;
-	color: white;
-	font-size: 15px;
-	padding: 3px;
-}
-
-.nocode{
-	background-color: #5cb85c;
-}
-
-#skillpic{
-	width: 450px;
+.contact-divider{
+    background-color: #e9eaea;
+    height: 3px;
+    width: 400px;
+    display: inline-block;
+    border-top-color: #e9eaea;
 }
