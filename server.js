@@ -3,7 +3,7 @@ var mongoose = require("mongoose"),
 	express = require("express"),
 	app = express();
 
-mongoose.connect("mongodb://localhost/testdb");
+/*mongoose.connect("mongodb://localhost/testdb");*/
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
