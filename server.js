@@ -17,8 +17,8 @@ app.get("/about", function(req, res){
 	res.render("about");
 });
 
-app.get("/portfolio", function(req, res){
-	res.render("portfolio");
+app.get("/project", function(req, res){
+	res.render("project");
 });
 
 app.get("/contact", function(req, res){
