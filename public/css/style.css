@@ -1,0 +1,141 @@
+.navbar-default {
+	background-color: #1b1c1d;
+	border-color: transparent;
+	border-radius: 0px;
+	padding: 0;
+	min-height: 70px;
+	padding-top: 10px;
+	font-size: 1.2em;
+	margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand{
+	color: #fff;
+	font-size: 1.2em;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	font-weight: normal;
+	color: #fff;
+/*	background-color: #34B3A0;
+	border-color: ##34B3A0;*/
+}
+
+.navbar-default .navbar-nav>li>a:visited{
+	color:#fff;
+}
+
+.navbar-default .navbar-brand:visited{
+	color: #fff;
+}
+
+.navbar-default .navbar-brand:hover{
+	color: #fff;
+}
+
+.jumbotron{
+	text-align: center;
+	margin: 10% 0px;
+	background-color: #34B3A0;
+	color: #fff;
+}
+
+body{
+	background-color: #34B3A0;
+	font-family: Consolas;
+}
+
+.photo{
+	width: 300px;
+	height: 300px;
+}
+
+.jumbotron .h1, .jumbotron h1{
+	font-weight: bold;
+}
+
+hr.style-med{
+    background-color: white;
+    height: 5px;
+    width: 25%;
+}
+
+hr.style-sm{
+    background-color: white;
+    height: 5px;
+    width: 40%;
+}
+
+.about{
+	margin-top: 30px;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	background-color: #e9eaea;
+	margin-bottom: 30px;
+}
+
+.section{
+	margin: 0 auto;
+	border: transparent; solid 1px;
+	text-align: center;
+}
+
+.content{
+	max-width: 50%;
+	display: inline-block;
+	text-align: justify;
+	margin: 10px;
+	vertical-align: middle;
+}
+
+.divider{
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+#codepic{
+	width: 250px;
+	height: 250px;
+}
+
+#bridgepic{
+	width: 350px;
+	height: 200px;
+}
+
+.edu{
+	max-width: 22%;
+}
+
+div .caption h4{
+	text-align: center;
+}
+
+.edu_logo{
+	max-width: 150px;
+	max-height: 150px;
+}
+
+.simple_line{
+	height: 1px;
+	background-color: black;
+}
+
+span{
+	background-color: #5bc0de;
+	border-radius: 15px;
+	border: #337ab7 solid 2px;
+	color: white;
+	font-size: 15px;
+	padding: 3px;
+}
+
+.nocode{
+	background-color: #5cb85c;
+}
+
+#skillpic{
+	width: 450px;
+}
