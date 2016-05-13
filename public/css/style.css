@@ -82,6 +82,7 @@ hr.style-sm{
 .info{
 	margin-top: 30px;
 	margin-bottom: 50px;
+	text-align: justify;
 /*	border-radius: 10px;
 	border: 1px solid transparent;
 	background-color: #e9eaea;
