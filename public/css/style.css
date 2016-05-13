@@ -81,6 +81,7 @@ hr.style-sm{
 
 .info{
 	margin-top: 30px;
+	margin-bottom: 50px;
 /*	border-radius: 10px;
 	border: 1px solid transparent;
 	background-color: #e9eaea;
@@ -125,4 +126,15 @@ hr.style-sm{
 .inline-content{
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.skill-list{
+	list-style-type: none;
+}
+
+ul.skill-list li{
+	display: inline-block;
+	border: 2px solid #fff;
+	padding: 5px;
+	border-radius: 5px;
 }
