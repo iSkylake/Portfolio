@@ -134,6 +134,10 @@ hr.style-sm{
 	flex-wrap: wrap;
 }
 
+.git-align{
+	text-align: right;
+}
+
 .skill-list{
 	list-style-type: none;
 }
