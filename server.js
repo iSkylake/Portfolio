@@ -3,27 +3,15 @@ var mongoose = require("mongoose"),
 	express = require("express"),
 	app = express();
 
+var indexRoutes = require("./routes/index");
+
 /*mongoose.connect("mongodb://localhost/testdb");*/
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.get("/", function(req, res){
-	res.render("index");
-});
-
-app.get("/about", function(req, res){
-	res.render("about");
-});
-
-app.get("/portfolio", function(req, res){
-	res.render("portfolio");
-});
-
-app.get("/contact", function(req, res){
-	res.render("contact");
-});
+app.use(indexRoutes);
 
 app.listen(process.env.PORT || 3000, function(){
 	console.log("Server Started")
