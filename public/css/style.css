@@ -79,7 +79,7 @@ hr.style-sm{
     width: 40%;
 }
 
-.info{
+.container-margin{
 	margin-top: 30px;
 	margin-bottom: 50px;
 	text-align: justify;
@@ -96,12 +96,10 @@ hr.style-sm{
     border-top-color: #fff;
     height: 3px;
     margin: 40px 0;
-    /*margin-top: 20px;*/	
+    /*margin-top: 0px;*/	
 }
 
-.vertical-line{
-	border-left: #fff solid 4px;
-}
+
 
 .contact-divider{
     background-color: #e9eaea;
