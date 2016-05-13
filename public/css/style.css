@@ -90,10 +90,17 @@ hr.style-sm{
 }
 
 .divider{
-    background-color: #204056;
+/*    background-color: #204056;
+    border-top-color: #204056;*/    
+    background-color: #fff;
+    border-top-color: #fff;
     height: 3px;
-    border-top-color: #204056;
-    margin: 40px 0;	
+    margin: 40px 0;
+    /*margin-top: 20px;*/	
+}
+
+.vertical-line{
+	border-left: #fff solid 4px;
 }
 
 .contact-divider{
