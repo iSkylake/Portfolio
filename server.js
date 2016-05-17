@@ -3,13 +3,14 @@ var mongoose = require("mongoose"),
 	express = require("express"),
 	app = express();
 
+//Routes
 var indexRoutes = require("./routes/index");
 
 /*mongoose.connect("mongodb://localhost/testdb");*/
 
-app.set("view engine", "ejs");
-app.use(express.static("public"));
-app.use(bodyParser.urlencoded({extended: true}));
+app.set("view engine", "ejs"); //Looks for ejs files
+app.use(express.static("public")); //Serve for static files
+app.use(bodyParser.urlencoded({extended: true})); //Parse the body content
 
 app.use(indexRoutes);
 

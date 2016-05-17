@@ -83,20 +83,13 @@ hr.style-sm{
 	margin-top: 30px;
 	margin-bottom: 50px;
 	text-align: justify;
-/*	border-radius: 10px;
-	border: 1px solid transparent;
-	background-color: #e9eaea;
-	margin-bottom: 30px;*/
 }
 
-.divider{
-/*    background-color: #204056;
-    border-top-color: #204056;*/    
+.divider{  
     background-color: #fff;
     border-top-color: #fff;
     height: 3px;
-    margin: 40px 0;
-    /*margin-top: 0px;*/	
+    margin: 40px 0;	
 }
 
 
@@ -115,14 +108,6 @@ hr.style-sm{
 
 .app-info{
 	text-align: justify;
-}
-
-.app-divider{
-    border: 0;
-    height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
-    margin-bottom: 0px;
 }
 
 .app-img{
