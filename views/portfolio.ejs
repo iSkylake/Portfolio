@@ -2,76 +2,25 @@
 
 	<!-- Shows every project -->
 	<div class="container container-margin">
-		<div class="container">
-			<h3>Web Development</h3> <!-- Web development projects -->
-			<div class="row inline-content">
-				<div class="col-md-3 col-sm-6">
-					<div class="thumbnail">
-						<img class="app-img" src="img/Blog.png">
-						<div class="caption">
-							<h4 class="app-title">Blog</h4>
-							<p class="app-info">Blog applying RESTful routes for creating, showing and deleting posts.</p>
-							<div class="git-align"><a class="btn btn-info btn-sm" href="https://github.com/iSkylake/Blog"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
+		<% for(i=0; i<portfolio.length; i++){ %>
+			<div class="container">
+				<h3><%= portfolio[i].name %></h3> <!-- Web development projects -->
+				<div class="row inline-content">
+					<% portfolio[i].projects.forEach(function(project){ %>
+						<div class="col-md-3 col-sm-6">
+							<div class="thumbnail">
+								<img class="app-img" src="<%= project.image %>">
+								<div class="caption">
+									<h4 class="app-title"><%= project.title %></h4>
+									<p class="app-info"><%= project.description %></p>
+									<div class="git-align"><a class="btn btn-info btn-sm" href="<%= project.github %>"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="thumbnail">
-						<img class="app-img" src="img/Image Gallery.png">
-						<div class="caption">
-							<h4 class="app-title">Image Gallery</h4>
-							<p class="app-info">An image gallery using Bootstrap and the grid system for responsive web apps.</p>
-							<div class="git-align"><a class="btn btn-info btn-sm" href="https://github.com/iSkylake/Image-Gallery"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="thumbnail">
-						<img class="app-img" src="img/RGB Game.png">
-						<div class="caption">
-							<h4 class="app-title">RGB Game</h4>
-							<p class="app-info">A RGB guessing game using DOM manipulation and Javascript.</p>
-							<div class="git-align"><a class="btn btn-info btn-sm" href="https://github.com/iSkylake/RGB-Game"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="thumbnail">
-						<img class="app-img" src="img/To-Do List.png">
-						<div class="caption">
-							<h4 class="app-title">To-Do List</h4>
-							<p class="app-info">A To-Do List made with jQuery. You can add more tasks, scratch them or delete them.</p>
-							<div class="git-align"><a class="btn btn-info btn-sm" href="https://github.com/iSkylake/To-Do-List"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
-						</div>
-					</div>
+					<% }); %>
 				</div>
 			</div>
-		</div>
-		<div class="container">
-			<h3>Visual Basic</h3> <!-- Visual basic projects -->
-			<div class="row inline-content">
-				<div class="col-md-3 col-sm-6">
-					<div class="thumbnail">
-						<img class="app-img" src="img/ProjectPlus.png">
-						<div class="caption">
-							<h4 class="app-title">Addition Game</h4>
-							<p class="app-info">This is a addition game for little kids, it has numbers from 1 to 10. I made this game for a College project.</p>
-							<div class="git-align"><a class="btn btn-info btn-sm" href="https://github.com/iSkylake/Addition-Game"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
-					<div class="thumbnail">
-						<img class="app-img" src="img/Memory.png">
-						<div class="caption">
-							<h4 class="app-title">Fifa 2015 Memory Game</h4>
-							<p class="app-info">This is a memory game with 2015 FIFA World Cup theme. I made this game for a College project.</p>
-							<div class="git-align"><a class="btn btn-info btn-sm" href="https://github.com/iSkylake/Fifa-2015-Memory-Game"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<% } %>
 	</div>
 
 <% include ./partials/footer %>

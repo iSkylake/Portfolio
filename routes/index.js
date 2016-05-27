@@ -1,4 +1,7 @@
-var express = require("express");
+var express = require("express"),
+	Portfolio = require('../models/portfolio.js'),
+	Skill = require('../models/skill.js'),
+	Project = require('../models/Project.js'),
 	router = express.Router();
 
 //Get route for homepage
@@ -8,12 +11,24 @@ router.get("/", function(req, res){
 
 //Get route for about page
 router.get("/about", function(req, res){
-	res.render("about");
+	Skill.find({}, function(err, skill){
+		if(err){
+			console.log(err);
+		} else{
+			res.render("about", {skills: skill});
+		}
+	});
 });
 
 //Get route for portfolio
 router.get("/portfolio", function(req, res){
-	res.render("portfolio");
+	Portfolio.find({}).populate("projects").exec(function(err, portfolio){
+		if(err){
+			console.log(err);
+		} else{
+			res.render("portfolio", {portfolio:portfolio});
+		}
+	});
 });
 
 //Get route for contact
