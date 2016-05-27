@@ -1,7 +1,7 @@
 var express = require("express"),
 	Portfolio = require('../models/portfolio.js'),
 	Skill = require('../models/skill.js'),
-	Project = require('../models/Project.js'),
+	Project = require('../models/project.js'),
 	router = express.Router();
 
 //Get route for homepage
