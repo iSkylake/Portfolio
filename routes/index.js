@@ -4,8 +4,12 @@ var express = require("express"),
 	Project = require('../models/project.js'),
 	router = express.Router();
 
-//Get route for homepage
 router.get("/", function(req, res){
+	res.redirect("http://www.llorch.com");
+});
+
+//Get route for homepage
+router.get("/home", function(req, res){
 	res.render("index");
 });
 
